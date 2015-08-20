@@ -16,6 +16,7 @@ module.exports = function (passport, config) {
 	    callbackUrl: callbackUrl,
 	    path: config.passport.saml.path,
 	    entryPoint: config.passport.saml.entryPoint,
+	    cert: config.passport.saml.cert,
 	    issuer: config.passport.saml.issuer
 	  },
 	  function(profile, done) {
